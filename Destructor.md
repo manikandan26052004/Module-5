@@ -20,12 +20,33 @@ To create a Python class `Student` with a destructor.
 ---
 
 ### PROGRAM
-
 ```
+Reg no-212222220022
+Name-MANIKANDAN R
+write your code
+class Student:
 
+   
+    def __init__(self, name):
+        self.name=name
+        print('Inside Constructor')
+        print('Object initialized')
+        print("Hello, my name is",name)
+    def __del__(self):
+        print("Inside destructor")
+        print("Object destroyed")
+
+   
+name='Emma'
+obj=Student(name)
+del obj
 ```
 
 ### OUTPUT
 
 
+![MODULE 5B](https://github.com/user-attachments/assets/3168f836-2e99-443b-8bd3-fc071f4a6b9d)
+
+
 ### RESULT
+This program for  class `Student` with a destructor is successfully executed.
