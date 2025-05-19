@@ -30,16 +30,37 @@ To write a Python program to get the name, attendance, and ID of a student and c
 ---
 
 ### PROGRAM
-
 ```
-
+REG NO: 212222220022
+NAME: MANIKANDAN R
+class one():
+    def student1(self,name,att,id):
+        print(name)
+        print(att)
+        print("Eligible for Module Exam")
+class two():
+    def student2(self,name,att,id):
+        print(name)
+        print(att)
+        print("Not Eligible for Module Exam")
+class valid(one,two):
+    def valid(self,name,att,id):
+        if id>75:
+            one().student1(name,att,id)
+        else:
+            two().student2(name,att,id)
+name=input()
+att=int(input())
+id=int(input())
+x=valid()
+x.valid(name,att,id)
 ```
 
 ### OUTPUT
 
 
+![MODULE 5E](https://github.com/user-attachments/assets/5f3b3393-f99f-4d29-958b-e9ad4bdc3852)
+
+
 ### RESULT
-
-
-
-
+This program for  get the name, attendance, and ID of a student and check if they are eligible for the next module using multiple inheritance. If attendance > 80, the student is eligible; otherwise, not eligible is successfuly executed. 
